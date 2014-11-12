@@ -1,8 +1,12 @@
 import org.apache.poi.ss.usermodel.Row;
+
+
 public class Produs {
 	 String emp;
 	  String name; 
 	  String salary;
+
+
 	  public void assignProdus(Row row){
 		    emp = row.getCell(0).toString();
 		    name = row.getCell(1).toString();
@@ -12,4 +16,3 @@ public class Produs {
 		return "Angajatul cu id: "+emp+"\nNume: "+name+"\nSalariu: "+salary;  
 	  }
 }
-
